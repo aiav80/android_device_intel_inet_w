@@ -2,7 +2,7 @@ on init
     write /proc/sys/fs/suid_dumpable 1
 
 on post-fs
-    insmod ${ro.modules.location}/lm_dump.ko
+    insmod /lib/modules/lm_dump.ko
 
 on post-fs-data
     mkdir /data/tombstones 0755 system system

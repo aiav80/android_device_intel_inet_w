@@ -1,5 +1,4 @@
-$(call inherit-product-if-exists, vendor/intel/cherrytrail-common/cherrytrail-common-vendor.mk)
-#$(call inherit-product-if-exists, vendor/intel/inet_w/inet_w-vendor.mk)
+$(call inherit-product-if-exists, vendor/intel/inet_w/inet_w-vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/intel/inet_w/overlay
 
@@ -40,10 +39,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heaptargetutilization=0.75 \
     dalvik.vm.heapminfree=512k \
     dalvik.vm.heapmaxfree=8m
-
-# Kernel Modules
-ADDITIONAL_DEFAULT_PROPERTIES += \
-    ro.modules.location=/lib/modules
 
 # Display
 ADDITIONAL_DEFAULT_PROPERTIES += \
@@ -125,6 +120,3 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.wifi.direct.xml:system/etc/permissions/android.hardware.wifi.direct.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
     frameworks/native/data/etc/tablet_core_hardware.xml:system/etc/permissions/tablet_core_hardware.xml
-
-# TWRP
-#PRODUCT_COPY_FILES += device/intel/inet_w/twrp.fstab:recovery/root/etc/twrp.fstab
