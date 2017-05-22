@@ -76,11 +76,11 @@ COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
 # SELinux
 BOARD_SEPOLICY_DIRS += \
     device/intel/sepolicy \
-    device/intel/cherrytrail-common/sepolicy \
-    device/intel/cherrytrail-common/sepolicy/dollar_cove \
-    device/intel/cherrytrail-common/sepolicy/intel_prop \
-    device/intel/cherrytrail-common/sepolicy/sensorhub \
-    device/intel/cherrytrail-common/sepolicy/telephony
+    device/intel/inet_w/sepolicy \
+    device/intel/inet_w/sepolicy/dollar_cove \
+    device/intel/inet_w/sepolicy/intel_prop \
+    device/intel/inet_w/sepolicy/sensorhub \
+    device/intel/inet_w/sepolicy/telephony
 
 BOARD_SEPOLICY_UNION += \
     adbd.te \
