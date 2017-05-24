@@ -1,0 +1,6 @@
+add_lunch_combo omni_inet_w-userdebug
+add_lunch_combo omni_inet_w-eng
+add_lunch_combo cm_inet_w-user
+add_lunch_combo cm_inet_w-userdebug
+add_lunch_combo cm_inet_w-eng
+
